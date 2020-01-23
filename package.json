@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/kevinegstorf/grid-test/issues"
   },
-  "homepage": "https://github.com/kevinegstorf/grid-test#readme"
+  "homepage": "https://github.com/kevinegstorf/grid-test#readme",
+  "dependencies": {
+    "autoprefixer-cli": "^1.0.0"
+  }
 }
