@@ -4,7 +4,7 @@
   /* grid-template-areas: 'left right'; */
   grid-template-rows: 100px 200px 400px 100px;
   grid-template-columns: repeat(3, 1fr) 200px;
-  grid-gap: 30px;
+  /* grid-gap: 30px; */
   width: 1000px;
   margin: 30px auto;
 }
