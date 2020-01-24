@@ -38,11 +38,11 @@ footer {
   display: grid;
 
       grid-template-areas:
-    "head head"
-    "box  side"
-    "main side"
-    "main side"
-    "foot foot";
+    "head head head head"
+    "box-1  box-2 box-3 side"
+    "main main main side"
+    "main main main side"
+    "foot foot foot foot";
   -ms-grid-rows: 100px 30px 200px 30px 400px 30px 100px;
   grid-template-rows: 100px 200px 400px 100px;
   -ms-grid-columns: 1fr 30px 1fr 30px 1fr 30px 200px;
@@ -62,7 +62,7 @@ footer {
 header {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
+  -ms-grid-column-span: 7;
   grid-area: head;
   /* grid-column: 1 / 5; */
 }
@@ -70,7 +70,7 @@ header {
 aside {
   -ms-grid-row: 3;
   -ms-grid-row-span: 5;
-  -ms-grid-column: 3;
+  -ms-grid-column: 7;
   grid-area: side;
   /* grid-column: 4 / 5;
   grid-row: boxes-start; */
@@ -80,6 +80,7 @@ main {
   -ms-grid-row: 5;
   -ms-grid-row-span: 3;
   -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
   grid-area: main;
   /* grid-column: 1 / span 3; */
 }
@@ -87,14 +88,27 @@ main {
 footer {
   -ms-grid-row: 9;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
+  -ms-grid-column-span: 7;
   grid-area: foot;
   /* grid-column: 1 / 5; */
 }
 
-.box {
+.box--1 {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
-  grid-area: box;
+  grid-area: box-1;
+  /* width: 90%; */
+}
+.box--2 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: box-2;
+  /* width: 90%; */
+}
+.box--3 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 5;
+  grid-area: box-3;
+  /* width: 90%; */
 }
 

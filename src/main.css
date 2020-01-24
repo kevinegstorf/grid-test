@@ -37,11 +37,11 @@ footer {
   display: grid;
 
   grid-template-areas:
-    "head head"
-    "box  side"
-    "main side"
-    "main side"
-    "foot foot";
+    "head head head head"
+    "box-1  box-2 box-3 side"
+    "main main main side"
+    "main main main side"
+    "foot foot foot foot";
   grid-template-rows: 100px 200px 400px 100px;
   grid-template-columns: repeat(3, 1fr) 200px;
   grid-gap: 30px;
@@ -77,6 +77,15 @@ footer {
   /* grid-column: 1 / 5; */
 }
 
-.box {
-  grid-area: box;
+.box--1 {
+  grid-area: box-1;
+  /* width: 90%; */
+}
+.box--2 {
+  grid-area: box-2;
+  /* width: 90%; */
+}
+.box--3 {
+  grid-area: box-3;
+  /* width: 90%; */
 }
